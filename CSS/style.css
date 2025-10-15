@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --pink-400: hsl(0, 36%, 70%);
+    --red-500: hsl(0, 93%, 68%);
+
+    --gray-900: hsl(0, 6%, 24%);
+
+    --gradient-light: hsl(0, 100%, 98%);
+    --gradient-pink: hsl(0, 74%, 74%);
+
+    --font-destaque: 'Josefin Sans', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    font-family: var(--font-destaque);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    margin: 3rem;
+}
+
+.logo img{
+    width: 10rem;
+}
+
+main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.img{
+    height: 25rem;
+    width: 100%;
+    background-image: url(../images/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+article{
+    background-color: var(--gradient-light);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article h1{
+    color: var(--gray-900);
+    width: 40rem;
+    margin: 7rem 0rem 3rem 0rem;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 5rem;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+}
+
+article span{
+    color: var(--pink-400);
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+article p{
+    color: var(--pink-400);
+    margin: 0rem 2rem;
+}
+
+footer{
+    text-align: center;
+    text-decoration: none;
+    color: var(--White);
+    font-weight: 300;
+}
