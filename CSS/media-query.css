@@ -1,5 +1,66 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px){
-    
+@media screen and (min-width: 1440px){
+    main{
+        min-width: 100vw;
+        min-height: 89rem;
+        display: grid;
+        grid-template: .2fr 1fr / 100rem 67rem; 
+    }
+
+    .logo{
+        margin: 0rem;
+        padding: 10.5rem 0rem 0rem 20rem;
+        background-color: var(--gradient-light);
+    }
+
+    .logo img{
+        width: 20rem;
+    }
+
+    .img{
+        height: 89rem;
+        width: 137.3%;
+        background-image: url(../images/hero-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: 1/2/3/3;
+    }
+
+    article{
+        padding: 0rem 0rem 0rem 20rem;
+        background-color: var(--gradient-light);
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        grid-area: 2/1/3/2;
+    }
+
+    article h1{
+        width: 50rem;
+        line-height: 8rem;
+        font-size: 7rem;
+    }
+
+    article span{
+        font-size: 7rem;
+    }
+
+    article p{
+        margin: 0rem;
+        width: 45rem;
+    }
+
+    .submit{
+        padding-left: 2rem;
+        width: 45rem;
+    }
+
+    .img-submit{
+        border-radius: 5rem;
+        width: 10rem;
+    }
 }

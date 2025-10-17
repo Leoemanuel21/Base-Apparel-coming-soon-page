@@ -32,19 +32,19 @@ body{
     align-items: center;
 }
 
+main{
+    max-width: 38rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
+
 .logo{
     margin: 3rem;
 }
 
 .logo img{
     width: 10rem;
-}
-
-main{
-    width: 38rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 .img{
@@ -58,6 +58,7 @@ main{
 article{
     background-color: var(--gradient-light);
     width: 100%;
+    height: 100vh;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -110,6 +111,8 @@ article p{
 }
 
 footer{
+    background-color: var(--gradient-light);
+    width: 100%;
     text-align: center;
     text-decoration: none;
     color: var(--White);
