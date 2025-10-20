@@ -11,6 +11,8 @@
     --gradient-light: hsl(0, 100%, 98%);
     --gradient-pink: hsl(0, 74%, 74%);
 
+    --gradient-color1: hsl(0, 80%, 86%);
+
     --font-destaque: 'Josefin Sans', sans-serif;
 }
 
@@ -88,26 +90,56 @@ article p{
     margin: 0rem 2rem;
 }
 
-.submit{
-    margin: 3rem 0rem;
+.email-box{
     border: .1rem solid var(--pink-400);
-    border-radius: 3rem;
-    width: 33rem;
+    border-radius: 4rem;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.img-submit{
-    background-image: linear-gradient(to left, #F09695, #F6B2B1);
-    border-radius: 5rem;
-    width: 7rem;
-    height: 5rem;
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top: 4rem;
+    max-width: 40rem;
+}
+
+.img-btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 24%;
+    margin-left: 1.5rem;
+    padding: 1.4rem 3.5rem;
+    border-radius: 4rem;
+    background: linear-gradient(135deg, var(--gradient-color1), var(--pink-400));
+    box-shadow: 0rem .6rem 1.2rem var(--pink-400);
+    transition: .5s;
+}
+
+.img-btn:hover{
+    opacity: .6;
+}
+
+.email{
+    background-color: var(--gradient-light);
+    width: 80%;
+    border: none;
+    outline: none;
+    border-radius: 4rem;
+    padding: 1.2rem 2rem;
+    font-size: 600;
+}
+
+.email::placeholder{
+    color: var(--pink-400);
+    opacity: .6;
+}
+
+.error-icon, .error{
+    display: none;
+}
+
+.error{
+    margin: .5rem 0rem 0rem 2rem;
+    font-weight: 400;
+    color: var(--red-500);
 }
 
 footer{
